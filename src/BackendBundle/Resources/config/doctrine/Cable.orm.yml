@@ -1,0 +1,41 @@
+BackendBundle\Entity\Cable:
+    type: entity
+    table: cable
+    indexes:
+        fk_cable_cable_tipo_idx:
+            columns:
+                - cable_tipo
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+        diametroExterior:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: diametro_exterior
+    manyToOne:
+        cableTipo:
+            targetEntity: CableTipo
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                cable_tipo:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

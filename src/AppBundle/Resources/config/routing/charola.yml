@@ -1,0 +1,15 @@
+charola_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:Charola:new"}
+    methods: POST
+
+charola_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Charola:edit", id:null}
+    methods: POST
+
+charola_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Charola:delete", id:null}
+    methods: POST
+

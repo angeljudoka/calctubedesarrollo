@@ -1,0 +1,14 @@
+tubo_tipo_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:TuboTipo:new"}
+    methods: POST
+
+tubo_tipo_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:TuboTipo:edit", id:null}
+    methods: POST
+
+tubo_tipo_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:TuboTipo:delete", id:null}
+    methods: POST

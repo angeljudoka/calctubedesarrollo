@@ -1,0 +1,15 @@
+charolas_tipo_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:CharolaTipo:new"}
+    methods: POST
+
+charolas_tipo_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:CharolaTipo:edit", id:null}
+    methods: POST
+
+charolas_tipo_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:CharolaTipo:delete", id:null}
+    methods: POST
+

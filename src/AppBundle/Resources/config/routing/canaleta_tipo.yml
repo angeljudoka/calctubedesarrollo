@@ -1,0 +1,14 @@
+canaleta_tipo_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:CanaletaTipo:new"}
+    methods: POST
+
+canaleta_tipo_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:CanaletaTipo:edit", id:null}
+    methods: POST
+
+canaleta_tipo_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:CanaletaTipo:delete", id:null}
+    methods: POST

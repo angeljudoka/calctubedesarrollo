@@ -1,0 +1,14 @@
+cable_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:Cable:new"}
+    methods: POST
+
+cable_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Cable:edit", id:null}
+    methods: POST
+
+cable_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Cable:delete", id:null}
+    methods: POST

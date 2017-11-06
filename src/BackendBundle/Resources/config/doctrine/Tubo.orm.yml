@@ -1,0 +1,53 @@
+BackendBundle\Entity\Tubo:
+    type: entity
+    table: tubo
+    indexes:
+        fk_tubo_tubo_tipo_idx:
+            columns:
+                - tubo_tipo
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+        tamanoComercial:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: tamano_comercial
+        designacionMetrica:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: designacion_metrica
+        diametroInterno:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: diametro_interno
+    manyToOne:
+        tuboTipo:
+            targetEntity: TuboTipo
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                tubo_tipo:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

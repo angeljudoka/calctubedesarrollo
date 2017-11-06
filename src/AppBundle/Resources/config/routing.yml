@@ -1,0 +1,39 @@
+app_default: 
+    resource: "@AppBundle/Resources/config/routing/default.yml"
+    prefix: /
+
+app_usuario: 
+    resource: "@AppBundle/Resources/config/routing/usuario.yml"
+    prefix: /usuario
+    
+app_cable_tipo: 
+    resource: "@AppBundle/Resources/config/routing/cable_tipo.yml"
+    prefix: /cable_tipo
+
+app_tubo_tipo: 
+    resource: "@AppBundle/Resources/config/routing/tubo_tipo.yml"
+    prefix: /tubo_tipo
+
+app_canaleta_tipo: 
+    resource: "@AppBundle/Resources/config/routing/canaleta_tipo.yml"
+    prefix: /canaleta_tipo
+    
+app_charola_tipo: 
+    resource: "@AppBundle/Resources/config/routing/charola_tipo.yml"
+    prefix: /charola_tipo
+
+app_cable: 
+    resource: "@AppBundle/Resources/config/routing/cable.yml"
+    prefix: /cable
+    
+app_canaleta: 
+    resource: "@AppBundle/Resources/config/routing/canaleta.yml"
+    prefix: /canaleta
+
+app_charola: 
+    resource: "@AppBundle/Resources/config/routing/charola.yml"
+    prefix: /charola
+    
+app_tubo: 
+    resource: "@AppBundle/Resources/config/routing/tubo.yml"
+    prefix: /tubo

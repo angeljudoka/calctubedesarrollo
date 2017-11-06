@@ -1,0 +1,14 @@
+canaleta_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:Canaleta:new"}
+    methods: POST
+
+canaleta_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Canaleta:edit", id:null}
+    methods: POST
+
+canaleta_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Canaleta:delete", id:null}
+    methods: POST

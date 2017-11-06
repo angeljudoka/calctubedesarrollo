@@ -1,0 +1,14 @@
+cable_tipo_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:CableTipo:new"}
+    methods: POST
+
+cable_tipo_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:CableTipo:edit", id:null}
+    methods: POST
+
+cable_tipo_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:CableTipo:delete", id:null}
+    methods: POST

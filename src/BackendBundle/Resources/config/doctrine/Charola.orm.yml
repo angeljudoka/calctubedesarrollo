@@ -1,0 +1,40 @@
+BackendBundle\Entity\Charola:
+    type: entity
+    table: charola
+    indexes:
+        fk_charola_charola_tipo_idx:
+            columns:
+                - charola_tipo
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+        peralte:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+    manyToOne:
+        charolaTipo:
+            targetEntity: CharolaTipo
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                charola_tipo:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

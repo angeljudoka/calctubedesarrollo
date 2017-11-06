@@ -1,0 +1,14 @@
+usuario_new: 
+    path: /new
+    defaults: { _controller: "AppBundle:Usuario:new"}
+    methods: POST
+
+usuario_edit: 
+    path: /edit
+    defaults: { _controller: "AppBundle:Usuario:edit"}
+    methods: POST
+    
+usuario_list:
+    path:   /list
+    defaults: { _controller: "AppBundle:Usuario:paginado" }
+    methods:  GET 
